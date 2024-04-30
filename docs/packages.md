@@ -48,4 +48,4 @@ python manage.py createsuperuser
 python manage.py changepassword admin
 
 ```
-`govstack`
+`care`

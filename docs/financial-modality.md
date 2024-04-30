@@ -6,4 +6,4 @@ Types:
 * MOBILE_MONEY
 
 
-More information in the [specification](https://govstack.gitbook.io/bb-payments/9-service-apis#8.2.2-update-beneficiary-details-api)
+More information in the [specification](https://care.gitbook.io/bb-payments/9-service-apis#8.2.2-update-beneficiary-details-api)

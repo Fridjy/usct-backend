@@ -1,5 +1,5 @@
 ---
-serverImage: "ghcr.io/govstackworkinggroup/sandbox-bb-information-mediator"
+serverImage: "ghcr.io/careworkinggroup/sandbox-bb-information-mediator"
 tokenPin: "1234"
 dbStorage: "5Gi"
 servers:

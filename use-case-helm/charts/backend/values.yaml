@@ -2,7 +2,7 @@ deployment:
   name: backend
   containers:
     name: usct-backend
-    image: ghcr.io/govstackworkinggroup/sandbox-usecase-usct-backend
+    image: ghcr.io/careworkinggroup/sandbox-usecase-usct-backend
     imageTag: latest
     imagePullPolicy: IfNotPresent
 

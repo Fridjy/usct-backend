@@ -8,7 +8,7 @@ payment_bb_emulator:
       app: "payment-bb-emulator"
   container:
     name: payment-emulator
-    image: ghcr.io/govstackworkinggroup/sandbox-bb-payments
+    image: ghcr.io/careworkinggroup/sandbox-bb-payments
     imageTag: latest
     imagePullPolicy: IfNotPresent
   service:

@@ -10,7 +10,7 @@ dbService:
 dbStatefulset:
   name: open-imis-db
   spec:
-    image: ghcr.io/govstackworkinggroup/sandbox-bb-digital-registries:open-imis-db
+    image: ghcr.io/careworkinggroup/sandbox-bb-digital-registries:open-imis-db
     name: pgdata
     mountPath: /mnt/pgdata
     storage: 2Gi

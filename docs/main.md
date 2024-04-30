@@ -1,7 +1,7 @@
 # Unconditional Social Cash Transfer
 
 This is a driver backend application for
-[Unconditional Social Cash Transfer](https://github.com/GovStackWorkingGroup/product-use-cases/blob/main/product-use-case/inst-1-unconditional-social-cash-transfer.md)
+[Unconditional Social Cash Transfer](https://github.com/careWorkingGroup/product-use-cases/blob/main/product-use-case/inst-1-unconditional-social-cash-transfer.md)
 (USCT) use case.
 
 [Live Demo](https://usct.playground.sandbox-playground.com/driver-poc/)
@@ -52,7 +52,7 @@ When using the stand-alone authentication, the password for all users is `passwo
 
 To trigger the OIDC authentication flow, a client should issue a GET request to `/api/oauth2/authorization/esignet`
 
-* [Identity Building Block documentation](https://govstack.gitbook.io/bb-identity/2-description).
+* [Identity Building Block documentation](https://care.gitbook.io/bb-identity/2-description).
 * [MOSIP e-Signet](https://docs.mosip.io/1.2.0/integrations/e-signet) is an implementation of Identity BB based on OpenID Connect.
 * [OpenID Connect](https://openid.net/developers/how-connect-works/)
 
@@ -77,28 +77,28 @@ USCT heavily uses packages. To improve performance USCT uses cache for package t
 ### Adapter
 Originaly OpenIMIS base on [Fast Healthcare Interoperability Resources](https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources) (FHIR) standard.
 
-The [adapter](https://github.com/openimis/openimis-be-govstack_api_py) provides Govs OpenIMIS specification compliant.
+The [adapter](https://github.com/openimis/openimis-be-care_api_py) provides Govs OpenIMIS specification compliant.
 
 ### Example of request
 
 ![Get Packages OpenIMIS](images/getPackages.gif)
 
 ## Consent BB
-**GovStack Consent BB API** is an implementation of the building bloc. Details in the [repository](https://github.com/decentralised-dataexchange/bb-consent-api).
+**care Consent BB API** is an implementation of the building bloc. Details in the [repository](https://github.com/decentralised-dataexchange/bb-consent-api).
 
 ## Payment Building Block
 
-Payments BB is used as payment service that can disburse payment to Beneficiaries which compliant with [specification](https://govstack.gitbook.io/bb-payments/).
+Payments BB is used as payment service that can disburse payment to Beneficiaries which compliant with [specification](https://care.gitbook.io/bb-payments/).
 
 Supported payment Building blocks are:
 
 * Payment Building block emulator
-  * [API spec](https://govstack.gitbook.io/bb-payments/) version 1.0
+  * [API spec](https://care.gitbook.io/bb-payments/) version 1.0
 
-  * [Implementation](https://github.com/GovStackWorkingGroup/sandbox-bb-payments/tree/main/emulator/implementation) 
-  * [Documentation](https://github.com/GovStackWorkingGroup/sandbox-bb-payments/tree/main/emulator/docs)
+  * [Implementation](https://github.com/careWorkingGroup/sandbox-bb-payments/tree/main/emulator/implementation) 
+  * [Documentation](https://github.com/careWorkingGroup/sandbox-bb-payments/tree/main/emulator/docs)
 * Mifos Payment Hub
-  * [API spec](https://govstack.gitbook.io/bb-payments/) version 2.0 (In Development!) 
+  * [API spec](https://care.gitbook.io/bb-payments/) version 2.0 (In Development!) 
   * Implementation (in progress)
   * Documentation (in progress)
 
@@ -120,7 +120,7 @@ Environment variables for global configuration:
 | Name                | Description                                                                                                                                                                                 | Default Value                                                                                  |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | PAYMENT_IM_BASE_URL | URL for accessing Payment BB                                                                                                                                                                | http://sandbox-xroad-ss2.sandbox-im.svc.cluster.local:8080/r1/SANDBOX/GOV/PROVIDER/PAYMENT/api |
-| PAYMENT_IM_HEADER   | Header value for Information Mediator Building Block request header "X-Road-Client". More [Information](https://govstack.gitbook.io/bb-information-mediation/v/information-mediation-1.0/). | "PAYMENT_IM_HEADER:SANDBOX/ORG/CLIENT/TEST"                                                    |
+| PAYMENT_IM_HEADER   | Header value for Information Mediator Building Block request header "X-Road-Client". More [Information](https://care.gitbook.io/bb-information-mediation/v/information-mediation-1.0/). | "PAYMENT_IM_HEADER:SANDBOX/ORG/CLIENT/TEST"                                                    |
 
 ### Mifos Payment Hub environment variables 
 
@@ -134,7 +134,7 @@ Environment variables for global configuration:
 | PAYMENTHUB_PROGRAM_ID              | More information in PaymentHub Documentation ( TBD )                                                                                                                                        | 00                                                                                                                                    |
 | JWS_TENANT_PRIVATE_KEY             | More information in PaymentHub Documentation ( TBD )                                                                                                                                        | Default private key from [HERE](https://github.com/openMF/ph-ee-connector-common/blob/master/src/main/resources/application-jws.yaml) |
 | PAYMENTHUB_PAYMENT_MODE            | More information in PaymentHub Documentation ( TBD )                                                                                                                                        | mojaloop                                                                                                                              |
-| PAYMENTHUB_IM_HEADER               | Header value for Information Mediator Building Block request header "X-Road-Client". More [Information](https://govstack.gitbook.io/bb-information-mediation/v/information-mediation-1.0/). | SANDBOX/ORG/CLIENT/TEST                                                                                                               |
+| PAYMENTHUB_IM_HEADER               | Header value for Information Mediator Building Block request header "X-Road-Client". More [Information](https://care.gitbook.io/bb-information-mediation/v/information-mediation-1.0/). | SANDBOX/ORG/CLIENT/TEST                                                                                                               |
 
 ## IP FILTER
 In order to protect by IP callback endpoints, whitelist of IP can be provided by ENV VAR
@@ -149,7 +149,7 @@ In order to protect by IP callback endpoints, whitelist of IP can be provided by
 Pipeline variables:
 
 * AWS_RESOURCE_NAME_PREFIX = usct/dev-app
-* AWS_CLUSTER_NAME = Kubernetes cluster name, e.g. "Govstack-sandbox-cluster-dev"
+* AWS_CLUSTER_NAME = Kubernetes cluster name, e.g. "care-sandbox-cluster-dev"
 * AWS_ACCOUNT = 463471358064 (Sandbox Dev)
 * AWS_ROLE = CircleCIRole
 * CHART_NAMESPACE = `usct`
@@ -182,4 +182,4 @@ helm uninstall usct-backend --namespace usct
 
 ## Password/Secret
 
-https://govstack-global.atlassian.net/wiki/spaces/DEMO/pages/338690049/Passwords
+https://care-global.atlassian.net/wiki/spaces/DEMO/pages/338690049/Passwords

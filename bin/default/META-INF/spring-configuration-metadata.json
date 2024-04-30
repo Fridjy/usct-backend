@@ -1,0 +1,187 @@
+{
+  "groups": [
+    {
+      "name": "callback",
+      "type": "global.care.usct.configuration.CallbackProperties",
+      "sourceType": "global.care.usct.configuration.CallbackProperties"
+    },
+    {
+      "name": "igrant",
+      "type": "global.care.usct.configuration.IGrantProperties",
+      "sourceType": "global.care.usct.configuration.IGrantProperties"
+    },
+    {
+      "name": "open-imis",
+      "type": "global.care.usct.configuration.OpenImisProperties",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "payment.bb.im",
+      "type": "global.care.usct.configuration.PaymentBBInformationMediatorProperties",
+      "sourceType": "global.care.usct.configuration.PaymentBBInformationMediatorProperties"
+    },
+    {
+      "name": "payment.variables",
+      "type": "global.care.usct.configuration.PaymentProperties",
+      "sourceType": "global.care.usct.configuration.PaymentProperties"
+    },
+    {
+      "name": "paymenthub.bb",
+      "type": "global.care.usct.configuration.PaymentHubProperties",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.im",
+      "type": "global.care.usct.configuration.PaymentHubBBInformationMediatorProperties",
+      "sourceType": "global.care.usct.configuration.PaymentHubBBInformationMediatorProperties"
+    },
+    {
+      "name": "rsa",
+      "type": "global.care.usct.configuration.RsaKeyProperties",
+      "sourceType": "global.care.usct.configuration.RsaKeyProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "callback.cidr",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "global.care.usct.configuration.CallbackProperties"
+    },
+    {
+      "name": "igrant.data-agreement-id",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.IGrantProperties"
+    },
+    {
+      "name": "igrant.header",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.IGrantProperties"
+    },
+    {
+      "name": "igrant.mode",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.IGrantProperties"
+    },
+    {
+      "name": "igrant.token",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.IGrantProperties"
+    },
+    {
+      "name": "igrant.url",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.IGrantProperties"
+    },
+    {
+      "name": "open-imis.emulator-url",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "open-imis.header",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "open-imis.mode",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "open-imis.password",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "open-imis.suffix",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "open-imis.url",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "open-imis.user",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.OpenImisProperties"
+    },
+    {
+      "name": "payment.bb.im.base-url",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentBBInformationMediatorProperties"
+    },
+    {
+      "name": "payment.bb.im.header",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentBBInformationMediatorProperties"
+    },
+    {
+      "name": "payment.variables.government-identifier",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentProperties"
+    },
+    {
+      "name": "payment.variables.source-bb-id",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentProperties"
+    },
+    {
+      "name": "paymenthub.bb.account-mapper-u-r-l",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.bulk-connector-u-r-l",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.callback-base-url",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.im.header",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubBBInformationMediatorProperties"
+    },
+    {
+      "name": "paymenthub.bb.jws-tenant-private-key",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.payment-mode",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.program-id",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.registering-institution-id",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "paymenthub.bb.tenant",
+      "type": "java.lang.String",
+      "sourceType": "global.care.usct.configuration.PaymentHubProperties"
+    },
+    {
+      "name": "rsa.private-key",
+      "type": "java.security.interfaces.RSAPrivateKey",
+      "sourceType": "global.care.usct.configuration.RsaKeyProperties"
+    },
+    {
+      "name": "rsa.public-key",
+      "type": "java.security.interfaces.RSAPublicKey",
+      "sourceType": "global.care.usct.configuration.RsaKeyProperties"
+    }
+  ],
+  "hints": []
+}

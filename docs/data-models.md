@@ -46,7 +46,7 @@ Log of payment order request.
 ## Person
 Similar [description](https://openid.net/specs/openid-connect-core-1_0.html#5.1.%20Standard%20Claims).
 
-financial_address is https://govstack.gitbook.io/bb-payments/9-service-apis#docs-internal-guid-f78d8d0a-7fff-33bf-2d15-aced73dc0f65
+financial_address is https://care.gitbook.io/bb-payments/9-service-apis#docs-internal-guid-f78d8d0a-7fff-33bf-2d15-aced73dc0f65
 
 | Name                    |          Type          | Modifiers |                                                                       Description                                                                        |
 |:------------------------|:----------------------:|:----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -62,8 +62,8 @@ financial_address is https://govstack.gitbook.io/bb-payments/9-service-apis#docs
 | occupation              | character varying(255) |           |                                                                   Person's occupation                                                                    |
 | municipality            | character varying(255) |           |                                                                  Person's municipality                                                                   |
 | zip_code                | character varying(255) |           |                                                                    Person's zip code                                                                     |
-| bank_account_owner_name | character varying(255) |           |     Bank Account Owner name. [More info](https://github.com/GovStackWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a)      |
-| financial_address       | character varying(255) |           |         Financial address [more info](https://github.com/GovStackWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a)         |
+| bank_account_owner_name | character varying(255) |           |     Bank Account Owner name. [More info](https://github.com/careWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a)      |
+| financial_address       | character varying(255) |           |         Financial address [more info](https://github.com/careWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a)         |
 | financial_modality      | character varying(255) |           |                                                 Financial modality [more info](./financial-modality.md)                                                  |
-| iban                    | character varying(255) |           | International Bank Account Number [more info](https://github.com/GovStackWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a) |
-| bank_name               | character varying(255) |           |             Bank name [more info](https://github.com/GovStackWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a)             |
+| iban                    | character varying(255) |           | International Bank Account Number [more info](https://github.com/careWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a) |
+| bank_name               | character varying(255) |           |             Bank name [more info](https://github.com/careWorkingGroup/sandbox-bb-payments/tree/bad263faa7ff1c4d7788751e9cd06899c561853a)             |
